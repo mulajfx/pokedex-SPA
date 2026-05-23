@@ -98,7 +98,7 @@ npm run preview
 
 ## Screenshots
 
-*(Voeg hier screenshots toe na het draaien van de app)*
+*<img width="1900" height="903" alt="projectweb" src="https://github.com/user-attachments/assets/15beaa99-f55c-4c10-980c-483b5214c4de" />*
 
 ---
 
