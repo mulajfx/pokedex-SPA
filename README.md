@@ -1,6 +1,6 @@
 # PokéDex SPA
 
-Een interactieve Single Page Application gebouwd met de [PokéAPI](https://pokeapi.co/) als eindproject voor het vak **Web Advanced**.
+Een interactieve Single Page Application gebouwd met de [PokéAPI](https://pokeapi.co/) als mijn eindproject voor Web advanced.
 
 ---
 
