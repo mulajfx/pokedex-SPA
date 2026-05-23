@@ -1,5 +1,4 @@
-// src/js/ui.js
-// Alle DOM-manipulatie: elementen aanmaken, updaten en events koppelen
+// DOM manipulatie en rendering
 
 import { isFavourite, toggleFavourite, getFavourites, getPrefs } from './storage.js';
 
