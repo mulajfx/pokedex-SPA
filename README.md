@@ -113,6 +113,12 @@ npm run preview
 
 
 
+  ## Installatie
+npm install
+npm run dev
+
+
+
 
 ## Projectstructuur
 
