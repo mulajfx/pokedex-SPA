@@ -1,5 +1,4 @@
-// src/js/storage.js
-// Beheert alle LocalStorage operaties: favorieten & gebruikersvoorkeuren
+// Favorieten en voorkeuren via LocalStorage
 
 const FAVS_KEY = 'pokedex_favourites';
 const PREFS_KEY = 'pokedex_preferences';
