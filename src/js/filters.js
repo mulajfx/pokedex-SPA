@@ -1,5 +1,4 @@
-// src/js/filters.js
-// Alle filter-, zoek- en sorteerfuncties
+// Filter, zoek en sorteerfuncties
 
 /**
  * Generatielimieten voor de gen-filter.
