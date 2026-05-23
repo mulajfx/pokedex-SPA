@@ -1,5 +1,4 @@
-// src/js/main.js
-// Hoofdbestand: koppelt alle modules en beheert de app-staat
+// Hoofdbestand - app initialisatie en events
 
 import { fetchAllPokemon, fetchTypes } from './api.js';
 import { applyFilters } from './filters.js';
