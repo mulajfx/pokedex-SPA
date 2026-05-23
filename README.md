@@ -109,9 +109,10 @@ npm run preview
 - [MDN Web Docs – IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver)
 - [MDN Web Docs – LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 - [Vite documentatie](https://vitejs.dev/guide/)
-- AI chatlog: gegenereerd met Claude (Anthropic) – zie bijgevoegde chatlog
+- [conversation.json](https://github.com/user-attachments/files/28179470/conversation.json)
 
----
+
+
 
 ## Projectstructuur
 
