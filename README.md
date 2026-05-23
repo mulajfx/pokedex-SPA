@@ -131,3 +131,5 @@ pokedex-spa/
 │       └── ui.js        ← DOM-manipulatie, rendering
 └── dist/                ← gegenereerd door `npm run build`
 ```
+## Auteur
+mulajfx
