@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokéDex SPA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-ball"></span>
+        <span class="logo-text">PokéDex</span>
+      </div>
+      <div class="header-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Thema wisselen">
+          <span class="theme-icon">◐</span>
+        </button>
+        <button class="fav-toggle-btn" id="showFavourites" aria-label="Toon favorieten">
+          ♥ <span id="favCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="search-wrap">
+        <input type="text" id="searchInput" class="search-input" placeholder="Zoek Pokémon..." autocomplete="off" />
+        <span class="search-icon">⌕</span>
+      </div>
+      <div class="filter-row">
+        <select id="typeFilter" class="select-control">
+          <option value="">Alle types</option>
+        </select>
+        <select id="sortSelect" class="select-control">
+          <option value="id-asc">Nr. oplopend</option>
+          <option value="id-desc">Nr. aflopend</option>
+          <option value="name-asc">Naam A-Z</option>
+          <option value="name-desc">Naam Z-A</option>
+          <option value="hp-desc">HP hoog-laag</option>
+          <option value="attack-desc">Aanval hoog-laag</option>
+        </select>
+        <select id="genFilter" class="select-control">
+          <option value="">Alle generaties</option>
+          <option value="1">Gen I (1-151)</option>
+          
+          
+        </select>
+        <button class="btn-clear" id="clearFilters">Wis filters</button>
+      </div>
+    </section>
+
+    <div class="results-bar">
+      <span id="resultCount" class="result-count"></span>
+      <div class="view-toggle">
+        <button class="view-btn active" id="viewGrid" aria-label="Rasterweergave">▦</button>
+        <button class="view-btn" id="viewList" aria-label="Lijstweergave">☰</button>
+      </div>
+    </div>
+
+    <div id="loadingState" class="loading-state">
+      <div class="pokeball-loader"><div class="ball"></div></div>
+      <p>Pokémon worden geladen...</p>
+    </div>
+
+    <div id="errorState" class="error-state hidden">
+      <p>Er is iets misgegaan. Probeer opnieuw.</p>
+      <button id="retryBtn" class="btn-primary">Opnieuw proberen</button>
+    </div>
+
+    <section id="pokemonGrid" class="pokemon-grid hidden" aria-live="polite"></section>
+
+    <div id="listView" class="list-view hidden">
+      <table class="pokemon-table">
+        <thead>
+          <tr>
+            <th>Nr.</th>
+            <th>Sprite</th>
+            <th>Naam</th>
+            <th>Type(s)</th>
+            <th>HP</th>
+            <th>Aanval</th>
+            <th>Verdediging</th>
+            <th>Sp. Aanval</th>
+            <th>Sp. Verd.</th>
+            <th>Snelheid</th>
+            <th>Fav.</th>
+          </tr>
+        </thead>
+        <tbody id="listBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <div id="modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Sluiten">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div id="favouritesPanel" class="fav-panel hidden">
+    <div class="fav-panel-inner">
+      <div class="fav-header">
+        <h2>Mijn favorieten</h2>
+        <button class="fav-close" id="closeFavPanel" aria-label="Sluiten">✕</button>
+      </div>
+      <div id="favList" class="fav-list"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
